@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+ 
+}
+/* INTEGRANTESS */
+#main{
+    display: flex;
+    flex: 1;
+}
+/* 
+ article, nav, aside{
+     background-color: blue;
+ }
+ header, footer{
+     background-color: cadetblue;
+     margin: 1px;
+ 
+ }
+ */
+ 
+
+
+.padre-flex{
+    background: salmon;
+
+    display: flex;
+     /* flex-direction: row; 
+     flex-wrap: wrap; */ 
+   flex-flow: row wrap;
+   justify-content: center;
+  
+
+     
+}
+.padre-flex > div{
+    background: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 38px;
+    text-align: center;
+    width: 100px;
+}  
+/* /////////////////////////////// */
+
+/* SusImpresiones */
+/*
+.grid{
+    display: grid;
+    grid-template-columns: 300px 100px;
+    grid-template-rows:  40px 100px;
+    background-color: blueviolet;
+    
+}
+  */
+/* ///////SUS IMPRESIONES */
+article,  aside, header, footer{
+    flex: 1;
+    padding: 1rem;
+    margin: 1px;
+}
+.grid-item{
+    background-color: cadetblue;
+    border: 1PX SOLID black;
+    padding: 20px;
+    font-size: 1em;
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "footer footer footer"
+
+    ;
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% 63% 15%;
+    grid-column-gap: 14px;
+    grid-row-gap: 15px;
+    height: 100vh;
+    margin: 0;
+}
+.border{
+    border: 1px solid black;
+    background-color: burlywood;
+}
+
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+section#productos{
+    grid-area: productos;
+}
+section#servicios{
+    grid-area: servicios;
+
+}
+
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidad;
+}
+article, aside, header, footer{
+	flex: 1;
+	padding: 1rem;
+	margin: 1px;
+}
+
+
+/* ////////////////////// */
