@@ -2,99 +2,112 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="ccs/style.css">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impresión 3D</title>
 </head>
 <body>
-<h1>Impresiones 3D</h1>
+
 
     <!-- Shift +Alt + A  para atajo de comentarios -->
-    <div  id="menu">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="botonMenu">
-                    <span class="botonMenu__texto">Inicio</span>
-                </a></li>
-                <li><a href="integrantes.html " class="botonMenu">
-                    <span class="botonMenu__texto">Integrantes</span>
-                </a></li>
     
-                <li><a href="Impresiones.html" class="botonMenu">
-                    <span class="botonMenu__texto">Mas impresiones</span>
-                </a></li>
-    
-                <li><a href="SusImpresiones.html" class="botonMenu">
-                    <span class="botonMenu__texto">Sus Impresiones</span>
-                </a></li>
-    
-                <li><a href="Formulario.html"class="botonMenu">
-                    <span class="botonMenu__texto">Contacto</span>
-                </a></li>
-    
-                <li><a href="https://www.instagram.com/evprints3d/" class="botonMenu">
-                    <span class="botonMenu__texto">Instagram</span>
-                </a></li>
-            </ul>
-        </nav>
-    </div>
-
        
-     <!-- Conetendores y modificadores -->
-     <div class="contenedor">
-        <div class="contenedor__card">
+    
+    
+
+    <div id="grilla">
+        <header class="border">
+            <div class="menu" id="myTopnav">
+                <a href="index.html" >Inicio</a>
+                <a href="Impresiones.html" class="active">Mas impresiones</a>
+                <a href="SusImpresiones.html" class="active">Comprar</a>
+                <a href="Formulario.html"class="active">Contacto</a>
+                <a href="integrantes.html " class="active">Nosotros</a>
+                <a href="https://www.instagram.com/evprints3d/"  class="active ig"  ><img src="Imagenes/instagram.png" style="
+                   
+                   height: 25px;
+                    width: 25px;
+                   
+                "></a>
+    
+                <a href="Imagenes/" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        
+        </header>
+        <section id="productos" class="border">
+             <!-- Conetendores y modificadores -->
+        <div class="contenedor">
+            <div class="contenedor__card">
+                <div class="card"><!-- Bloque -->
+                    <a href="#" class="card__thumbnail"> <!-- Elemento -->
+                    <img src="imagenes/YodaEnCurso.jpeg" alt="" class="card__img" ></a>
+                
+
+                    <div class="card__textos">
+                        <h3 class="card__titulo">Yoda</h3>
+                        <p class="card__extracto">Esta impresion esta en curso, blablbablabnsklbldlas</p>
+
+                        <a href="Impresiones.html" class="boton boton--absolute"><!-- Bloque -->
+                        <span class="boton__texto">Ver más ►</span>
+                        </a>
+                    </div> 
+                </div>
+
+                <div class="card"><!-- Bloque -->
+                    <a href="#" class="card__thumbnail"> <!-- Elemento -->
+                    <img src="imagenes/spiderman.jpeg" alt="" class="card__img" ></a>
+                
+
+                    <div class="card__textos">
+                        <h3 class="card__titulo">SpiderMan</h3>
+                        <p class="card__extracto">Esta impresion esta en curso, blablbablabnsklbldlas</p>
+
+                        <a href="Impresiones.html" class="boton boton--absolute"><!-- Bloque -->
+                        <span class="boton__texto">Ver más ►</span>
+                        </a>
+                    </div> 
+            </div>
+            
             <div class="card"><!-- Bloque -->
                 <a href="#" class="card__thumbnail"> <!-- Elemento -->
-                <img src="imagenes/YodaEnCurso.jpeg" alt="" class="card__img" ></a>
+                <img src="imagenes/rino.jpeg" alt="" class="card__img" ></a>
             
 
                 <div class="card__textos">
-                    <h3 class="card__titulo">Yoda</h3>
+                    <h3 class="card__titulo">Rinoceronte</h3>
                     <p class="card__extracto">Esta impresion esta en curso, blablbablabnsklbldlas</p>
 
-                    <a href="#" class="boton boton--absolute"><!-- Bloque -->
-                    <span class="boton__texto">Ver más -></span>
+                    <a href="Impresiones.html" class="boton boton--absolute"><!-- Bloque -->
+                    <span class="boton__texto">Ver más ►</span>
                     </a>
                 </div> 
-            </div>
+        </div>
 
-            <div class="card"><!-- Bloque -->
-                <a href="#" class="card__thumbnail"> <!-- Elemento -->
-                <img src="imagenes/Stich.jpeg" alt="" class="card__img" ></a>
-            
-
-                <div class="card__textos">
-                    <h3 class="card__titulo">Stich</h3>
-                    <p class="card__extracto">Esta impresion esta en curso, blablbablabnsklbldlas</p>
-
-                    <a href="#" class="boton boton--absolute"><!-- Bloque -->
-                    <span class="boton__texto">Ver más -></span>
-                    </a>
-                </div> 
-            </div>
 
             <div class="frase "> <!-- Bloque -->
-                <h2 class="frase__texto">Enviame tus impresiones</h2>
-                <a href="SusImpresiones.html" class="boton boton--verde "><!-- Modificador -->
-                    <span class="boton__texto">Ver más</span><!-- Elemento -->
+               
+                <a href="Formulario.html" class="boton boton--verde "><!-- Modificador -->
+                    <span class="boton__texto">Consulta ►</span><!-- Elemento -->
                 </a>
             </div>
         </div>
 
-    </div>
-    <section >
-        <article id="footer">
-            <h2 class="tituloFooter">Footer</h2>
-            <h1>Contacto</h1>
-            <h1>Copyright</h1>
-            <h1></h1>
-            <h1></h1>
-        </article>	
-    </section>
+        <footer >Pie de pagina</footer>
+        </section>
+       
+        
+        <aside class="border">Publicidad</aside>
+        
 
-
-
+    
+ 
+   
+    
+</div>  
 
 
 </body>

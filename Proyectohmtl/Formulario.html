@@ -8,95 +8,112 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulario</h1>
-    <br>
+   
+
+    <div id="grilla">
+        <header class="border">
+            <div class="menu" id="myTopnav">
+                <a href="index.html" >Inicio</a>
+                <a href="Impresiones.html" class="active">Mas impresiones</a>
+                <a href="SusImpresiones.html" class="active">Comprar</a>
+                <a href="Formulario.html"class="active">Contacto</a>
+                <a href="integrantes.html " class="active">Nosotros</a>
+                <a href="https://www.instagram.com/evprints3d/"  class="active ig"  ><img src="Imagenes/instagram.png" style="
+                   
+                   height: 25px;
+                    width: 25px;
+                   
+                "></a>
+    
+                <a href="Imagenes/" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </header>
+        <section id="productos" class="border">
+
+            <form id="formulario" action="envio.php" method="POST" enctype="multipart/form-data">  
+                <fieldset>
+
+
+                    
+                    <legend class="Consulta">CONSULTA</legend>
+                     <hr color="#D90429"><hr color="#3D0000">
+                   <br>
+                   <label class="form">FORMULARIO DE PEDIDO</label>
+                   <hr class="hr2" color="#D90429">
+                   <br>
+                   <p class="parrafo">Para conectarte con nosotros podes completar el formulario y en breves nos contactaremos</p>
+                    
+                   <br><br>
+                   <label class="form2"> POR SITIO WEB </label>
+                   <hr class="hr3" color="#D90429">
+                   <br>
+                   <br>
+                   <table>
+                       <tr>
+                           <th><br><label class="nombre">Nombre*</label></th>                                                    
+                           <th><label class="apellido">Apellido*</label></th>                        
+                       </tr>                      
+                       <tr>                       
+                           <th><input class="custex1" type="text"  name="nombreyapellido" maxlength="100"></th>
+                           <th><input class="custex2" type="text"  name="nombreyapellido" maxlength="100"></th>
+                       </tr>
+                       <br><br>                     
+                       <tr>
+                        <th><label class="Telefono">Telefono* </label></th>                                                
+                        <th><label class="E-Mails">E-Mails* </label></th>
+                    </tr>
+                    <tr>                         
+                        <th><input class="custex3" type="text"  name="Contraseña" maxlength="120"></th>
+                        <th><input class="custex4" type="text"  name="Contraseña" maxlength="120"></th>
+                    </tr>
+
+                   </table>                                  
+                   <br>  <br>   <br>   <br>   <br> <br> <br>
+                    
+                   <svg viewBox="0 0 960 50">
+                    <symbol id="s-text">
+                        <text class="texto"text-anchor="middle" x="15%" y="50%">Consulta</text>
+                    </symbol>
+    
+                    <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+               <br><br><br>
+                <label class="consulta2"></label>
+                <input class="consu" type="text"  name="Contraseña" maxlength="120">
+
+            
+                    <br>
+                   
+                </fieldset>
+            </form>
+        </section>
+       
         
-    
+        <aside class="border">Publicidad</aside>
+        <!--  <footer >
+            <section >
+                <article id="footer">
+                    <h2 class="tituloFooter">Footer</h2>
+                    <h1>Contacto</h1>
+                    <h1>Copyright</h1>
+                    <h1></h1>
+                    <h1></h1>
+                </article>	
+            </section>
+        </footer> -->
 
-    <div  id="menu">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="botonMenu">
-                    <span class="botonMenu__texto">Inicio</span>
-                </a></li>
-                <li><a href="integrantes.html " class="botonMenu">
-                    <span class="botonMenu__texto">Integrantes</span>
-                </a></li>
-    
-                <li><a href="Impresiones.html" class="botonMenu">
-                    <span class="botonMenu__texto">Mas impresiones</span>
-                </a></li>
-    
-                <li><a href="SusImpresiones.html" class="botonMenu">
-                    <span class="botonMenu__texto">Sus Impresiones</span>
-                </a></li>
-    
-                <li><a href="Formulario.html"class="botonMenu">
-                    <span class="botonMenu__texto">Contacto</span>
-                </a></li>
-    
-                <li><a href="https://www.instagram.com/evprints3d/" class="botonMenu">
-                    <span class="botonMenu__texto">Instagram</span>
-                </a></li>
-            </ul>
-        </nav>
     </div>
-
-
-
-
     
 
-    <form id="formulario" action="envio.php" method="POST" enctype="multipart/form-data">  
-        <fieldset>
-            <legend>Envia tu Impresion 3D</legend>
-            <label for="nombreyapellido">Nombre y apellido</label>
-            <input type="text"  name="nombreyapellido" maxlength="100">
-            <br>
-            <br>
-            <label for="password">Contraseña</label>
-            
-            <input type="password">
-            
-            <br>
-            <h5>Tipo de impresión</h5>
-            <select name="tipoimpresiones">
-                <option value="pieza">Pieza</option>
-                <option value="juguete">Juguete</option>
-                <option value="">Figura</option>
-                <option value="">Decoración</option>
-                <option value="">Soporte</option>
-                
-    
-    
-            </select>
-            <div>Masculino</div>
-            <input type="radio" name="sexo" value="Masculino">
-            <div>Femenino</div>
-            <input type="radio" name="sexo" value="Femenino">
-            <div>Otro</div>
-            <input type="radio" name="sexo" value="Otro">
-            <br>
-            <div>Tengo mi propia impresora</div>
-            <input type="checkbox" name="tengoimpreora" value="1">
-            <br>
-            <br>
-            <textarea >Deja aqui tu comentario</textarea>
-    
-            <br>
-            <input type="submit" name="Submit" value="Enviar">
-            <input type="reset" name="reset" value="Limpiar">
-    
-        </fieldset>
-    </form>
-    <section >
-        <article id="footer">
-            <h2 class="tituloFooter">Footer</h2>
-            <h1>Contacto</h1>
-            <h1>Copyright</h1>
-            <h1></h1>
-            <h1></h1>
-        </article>	
-    </section>
+
+
 </body>
 </html>

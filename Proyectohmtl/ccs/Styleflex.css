@@ -2,12 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  
 }
+
 body{
     display: flex;
-    height: 600px;
-    flex-direction: column;
- 
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    
 }
 /* INTEGRANTESS */
 #main{
@@ -60,7 +63,7 @@ body{
 }
   */
 /* ///////SUS IMPRESIONES */
-article,  aside, header, footer{
+article,  aside, header{
     flex: 1;
     padding: 1rem;
     margin: 1px;
@@ -73,12 +76,15 @@ article,  aside, header, footer{
 }
 
 #grilla{
+    padding-bottom: 81px;
+    min-height: calc(100% - 81px);
+    position: relative;
     display: grid;
     grid-template-areas: 
-    "nav header header"
+    "header header header"
     "nav productos publicidad"
     "nav servicios publicidad"
-    "footer footer footer"
+    
 
     ;
     grid-template-rows: 100px 1fr 1fr 75px;
@@ -97,9 +103,7 @@ header{
     grid-area: header;
 }
 
-footer{
-    grid-area: footer;
-}
+
 section#productos{
     grid-area: productos;
 }
@@ -114,7 +118,7 @@ nav{
 aside{
     grid-area: publicidad;
 }
-article, aside, header, footer{
+article, aside{
 	flex: 1;
 	padding: 1rem;
 	margin: 1px;
