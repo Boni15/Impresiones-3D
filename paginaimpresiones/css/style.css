@@ -1,3 +1,7 @@
+.contact {
+  background-color: #e4b30029;
+}
+
 .input-container {
   display: flex;
   width: 100%;
@@ -6,7 +10,7 @@
 
 .iconC {
   padding: 10px;
-  background: #212529;
+  background-color: #212529;
   color: white;
   min-width: 50px;
   text-align: center;
@@ -34,8 +38,10 @@
   opacity: 1;
 }
 
-.contact {
-  background-color: #e4b30029;
+@media (min-width: 0px) {
+  .btn-text {
+    color: black;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
