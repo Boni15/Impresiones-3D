@@ -1,0 +1,15 @@
+
+$dark-theme:"true";
+$MedidaMain:50px;
+$bt-color-dark:#212529;
+$bt-color-light:#cad9e7;
+@mixin DarkTheme {
+	@if $dark-theme == "true" {
+		background-color:  $bt-color-dark;
+		color: white;	
+	} @else if $dark-theme == "false" {
+		background-color: $bt-color-light;
+		color:  $bt-color-dark;	
+	}
+  
+}
