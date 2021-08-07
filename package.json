@@ -1,7 +1,7 @@
 {
-  "name": "paginaimpresiones",
+  "name": "radgar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esto es una pagina para el emprendimiento de Radgar, especializados en impresiones 3D.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Boni15/Impresiones-3D.git"
   },
-  "author": "",
+  "author": "Bonifacio David -_-",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Boni15/Impresiones-3D/issues"
